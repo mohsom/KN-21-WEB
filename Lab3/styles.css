@@ -1,49 +1,46 @@
 /* Загальні стилі */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eef;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #585a55;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  /* Стилізація контейнера за допомогою Flexbox */
-  .container {
-    display: flex;
-    justify-content: space-around; /* Простір між блоками */
-    align-items: center;           /* Вертикальне вирівнювання */
-    padding: 20px;
-  }
-  
-  /* Стилізація блоків (демонстрація Box Model) */
-  .box {
-    background-color: #fff;
-    border: 2px solid #333;
-    padding: 12px;
-    margin: 11px;
-    width: 200px;
-    text-align: center;
-  }
-  
-  /* Медіа-запит для адаптивності */
-  @media (max-width: 1024px) {
-    .container {
-        color: #15e21b;
-    }
-  }
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column; /* Вертикальне розташування для менших екранів */
-      color: #971111;
-    }
-    .box{
-        font-family: "Times New Roman", serif;
-        font-size: 50px
-    }
-  }
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	padding: 10px;
+}
+
+/* Стилізація контейнера за допомогою Flexbox */
+.container {
+	display: flex;
+	justify-content: space-around; /* Простір між блоками */
+	align-items: center; /* Вертикальне вирівнювання */
+	padding: 20px;
+}
+
+/* Стилізація блоків (демонстрація Box Model) */
+.box {
+	background-color: #0a0a0a;
+	border: 2px solid #98bb0d;
+	padding: 12px;
+	margin: 11px;
+	text-align: center;
+	background-color: red;
+}
+
+/* Медіа-запит для адаптивності */
+@media (max-width: 1024px) {
+	.container {
+		color: #98bb0d;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column; /* Вертикальне розташування для менших екранів */
+		color: rgb(65, 135, 155);
+	}
+	.box {
+		font-family: "Times New Roman", serif;
+		font-size: 50px;
+	}
+}
